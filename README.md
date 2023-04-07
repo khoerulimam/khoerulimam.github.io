@@ -1,1 +1,0 @@
-# khoerulimam.github.io
