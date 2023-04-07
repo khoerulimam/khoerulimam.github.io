@@ -1,24 +1,32 @@
-/* style untuk layar kecil */
-@media only screen and (max-width: 600px) {
-    body {
-      font-size: 14px;
-    }
+/* Style untuk layar besar */
+body {
+  font-size: 18px;
+  /* Atur layout menjadi flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style untuk layar sedang */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    /* Ubah tata letak menjadi grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
   }
-  
-  /* style untuk layar sedang */
-  @media only screen and (min-width: 601px) and (max-width: 900px) {
-    body {
-      font-size: 16px;
-    }
+}
+
+/* Style untuk layar kecil */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+    /* Ubah tata letak menjadi block */
+    display: block;
   }
-  
-  /* style untuk layar besar */
-  @media only screen and (min-width: 901px) {
-    body {
-      font-size: 18px;
-    }
-  }
-  
+}
+
 *{
     margin: 0;
     padding: 0;
